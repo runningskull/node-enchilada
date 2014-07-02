@@ -46,7 +46,7 @@ module.exports = function enchilada(opt) {
             });
         }
         if (opt.globalTransforms) {
-            opt.transforms.forEach(function(transform) {
+            opt.globalTransforms.forEach(function(transform) {
                 bundle.transform({ global: true }, transform)
             });
         }
